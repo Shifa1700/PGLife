@@ -1,4 +1,12 @@
 window.addEventListener("load", function () {
+    var book_now_button = document.getElementById("book-now-button");
+    if (book_now_button) {
+        book_now_button.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.jQuery("#booking-construction-modal").modal("show");
+        });
+    }
+
     const search = window.location.search;
     const params = new URLSearchParams(search);
     const property_id = params.get('property_id');

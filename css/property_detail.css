@@ -93,6 +93,52 @@
     float: right;
 }
 
+.booking-construction-content {
+    min-height: 300px;
+    text-align: center;
+}
+
+#booking-construction-modal .modal-dialog {
+    max-width: 350px;
+    width: 350px;
+}
+
+.booking-construction-content .modal-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px 24px 28px;
+}
+
+.booking-return-button {
+    align-items: center;
+    background-color: #007bff;
+    border: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    margin: 0 auto 24px;
+    width: 42px;
+}
+
+.booking-return-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.booking-construction-content h5 {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.booking-construction-content p {
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
     .property-amenities .row>div {
         padding-bottom: 24px;

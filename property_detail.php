@@ -197,7 +197,7 @@ $interested_users_count = mysqli_num_rows($result_4);
                 <div class="rent-unit">per month</div>
             </div>
             <div class="button-container col-6">
-                <a href="#" class="btn btn-primary">Book Now</a>
+                <a href="#" class="btn btn-primary" id="book-now-button">Book Now</a>
             </div>
         </div>
     </div>
@@ -421,6 +421,23 @@ $interested_users_count = mysqli_num_rows($result_4);
     <?php
     include "includes/signup_modal.php";
     include "includes/login_modal.php";
+    ?>
+
+    <div class="modal fade" id="booking-construction-modal" tabindex="-1" role="dialog" aria-labelledby="booking-construction-heading" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content booking-construction-content">
+                <div class="modal-body">
+                    <button type="button" class="booking-return-button" data-dismiss="modal" aria-label="Return">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <h5 id="booking-construction-heading">Under Construction</h5>
+                    <p>Thank you for your patience - <em>good things take a moment to build.</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php
     include "includes/footer.php";
     ?>
 
