@@ -8,25 +8,6 @@
                 </button>
             </div>
 
-            <div class="modal fade" id="signup-success-modal" tabindex="-1" role="dialog" aria-labelledby="signup-success-heading" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="signup-success-heading">Account created successfully</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="mb-0">Your account has been created successfully. Click below to log in.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" id="signup-success-login">Login</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="modal-body">
                 <form id="signup-form" class="form" role="form" method="post" action="api/signup_submit.php">
                     <div class="input-group form-group">
@@ -77,12 +58,9 @@
                     <div class="form-group">
                         <span>I'm a</span>
                         <input type="radio" class="ml-3" id="gender-male" name="gender" value="male" /> Male
-                        <label for="gender-male">
-                        </label>
+                        <label for="gender-male"></label>
                         <input type="radio" class="ml-3" id="gender-female" name="gender" value="female" />
-                        <label for="gender-female">
-                            Female
-                        </label>
+                        <label for="gender-female">Female</label>
                     </div>
 
                     <div class="form-group">
@@ -95,6 +73,25 @@
                 <span>Already have an account?
                     <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#login-modal">Login</a>
                 </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="signup-success-modal" tabindex="-1" role="dialog" aria-labelledby="signup-success-heading" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signup-success-heading">Account created successfully</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0">Your account has been created successfully. Click below to log in.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="signup-success-login">Login</button>
             </div>
         </div>
     </div>
