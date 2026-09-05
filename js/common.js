@@ -47,12 +47,26 @@ var signup_success = function (event) {
 
     var response = JSON.parse(event.target.responseText);
     if (response.success) {
-        alert(response.message);
-        window.location.href = "index.php";
+        var signup_modal = window.jQuery("#signup-modal");
+        signup_modal.one("hidden.bs.modal", function () {
+            window.jQuery("#signup-success-modal").modal("show");
+        });
+        signup_modal.modal("hide");
+        document.getElementById("signup-form").reset();
     } else {
         alert(response.message);
     }
 };
+
+window.addEventListener("load", function () {
+    var login_button = document.getElementById("signup-success-login");
+    if (login_button) {
+        login_button.addEventListener("click", function () {
+            window.jQuery("#signup-success-modal").modal("hide");
+            window.jQuery("#login-modal").modal("show");
+        });
+    }
+});
 
 var login_success = function (event) {
     document.getElementById("loading").style.display = 'none';
