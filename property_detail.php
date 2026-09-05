@@ -441,7 +441,7 @@ $interested_users_count = mysqli_num_rows($result_4);
     include "includes/footer.php";
     ?>
 
-    <script type="text/javascript" src="js/property_detail.js?v=2"></script>
+    <script type="text/javascript" src="js/property_detail.js?v=3"></script>
 </body>
 
 </html>
